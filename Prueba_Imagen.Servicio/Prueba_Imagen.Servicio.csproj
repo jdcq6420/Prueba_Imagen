@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prueba_Imagen.DTO\Prueba_Imagen.DTO.csproj" />
+    <ProjectReference Include="..\Prueba_Imagen.Utilidades\Prueba_Imagen.Utilidades.csproj" />
+  </ItemGroup>
+
+</Project>
