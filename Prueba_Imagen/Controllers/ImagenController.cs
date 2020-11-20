@@ -4,7 +4,6 @@ using Prueba_Imagen.Servicio.Interface;
 using Prueba_Imagen.Utilidades.Recursos;
 using System;
 using System.Drawing;
-using System.IO;
 using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860

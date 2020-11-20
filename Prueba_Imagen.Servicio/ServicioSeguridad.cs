@@ -1,10 +1,8 @@
 ﻿using Prueba_Imagen.Servicio.Interface;
 using Prueba_Imagen.Utilidades.Constantes;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 
 namespace Prueba_Imagen.Servicio
 {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Prueba_Imagen.DTO
+﻿namespace Prueba_Imagen.DTO
 {
     public class ImagenResponseDTO
     {

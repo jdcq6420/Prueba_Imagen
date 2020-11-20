@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
-using System.Text;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace Prueba_Imagen.DTO
 {
@@ -9,5 +6,7 @@ namespace Prueba_Imagen.DTO
     {
         [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar una ruta con su respectivo archivo.")]
         public string Ruta { get; set; }
+
+        public string imagenStream { get; set; }
     }
 }

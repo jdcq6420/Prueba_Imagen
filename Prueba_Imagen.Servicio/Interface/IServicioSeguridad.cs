@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Prueba_Imagen.Servicio.Interface
+﻿namespace Prueba_Imagen.Servicio.Interface
 {
     public interface IServicioSeguridad
     {

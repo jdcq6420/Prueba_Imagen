@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Prueba_Imagen.Utilidades.Enum
+﻿namespace Prueba_Imagen.Utilidades.Enum
 {
     public enum Orientaciones
     {
