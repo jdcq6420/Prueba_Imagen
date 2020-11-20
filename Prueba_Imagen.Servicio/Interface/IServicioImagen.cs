@@ -8,6 +8,7 @@ namespace Prueba_Imagen.Servicio.Interface
     {
         string Orientacion(Size dimensiones);
         PropiedadesImagenDTO CambiarTamaño(Size dimensiones, string orientacion);
-        Task<ImagenResponseDTO> ProcesarImagen(Image imagen);
+        //Task<ImagenResponseDTO> ProcesarImagen(Image imagen);
+        ImagenResponseDTO ProcesarImagen(Image imagen);
     }
 }

@@ -28,7 +28,7 @@ namespace Prueba_Imagen.Controllers
         /// </summary>
         /// <param name="rutaImagen"></param>
         [HttpPost]
-        public async Task<IActionResult> Post([FromBody] ImagenRequestDTO rutaImagen)
+        public IActionResult Post([FromBody] ImagenRequestDTO rutaImagen)
         {
             try
             {   
@@ -43,7 +43,7 @@ namespace Prueba_Imagen.Controllers
                         };
 
                         Image imagen = Image.FromFile(rutaImagen.Ruta);
-                        imagenResponse = await _servicioImagen.ProcesarImagen(imagen);
+                        imagenResponse = _servicioImagen.ProcesarImagen(imagen);
                         imagen.Dispose();
 
                         if (imagenResponse != null)

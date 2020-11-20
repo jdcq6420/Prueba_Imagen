@@ -53,7 +53,7 @@ namespace Prueba_Imagen.Servicio
 
         }
 
-        public Task<ImagenResponseDTO> ProcesarImagen(Image imagen)
+        public ImagenResponseDTO ProcesarImagen(Image imagen)
         {
             ImagenResponseDTO respuesta = new ImagenResponseDTO()
             {
