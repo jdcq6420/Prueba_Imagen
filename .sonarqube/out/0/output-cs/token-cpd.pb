@@ -1,5 +1,5 @@
 ¶
->J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\DimensionesDTO.cs
+>J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\DimensionesDto.cs
 	namespace 	
 Prueba_Imagen
  
@@ -9,7 +9,7 @@
 public 
 
 class 
-DimensionesDTO 
+DimensionesDto 
 { 
 public 
 int 
@@ -31,7 +31,7 @@
 }$ %
 } 
 } ¨
-@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ErrorResponseDTO.cs
+@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ErrorResponseDto.cs
 	namespace 	
 Prueba_Imagen
  
@@ -41,7 +41,7 @@
 public 
 
 class 
-ErrorResponseDTO !
+ErrorResponseDto !
 { 
 public 
 string 
@@ -54,7 +54,7 @@
 }( )
 } 
 } ¤
-@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenRequestDTO.cs
+@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenRequestDto.cs
 	namespace 	
 Prueba_Imagen
  
@@ -64,7 +64,7 @@
 public 
 
 class 
-ImagenRequestDTO !
+ImagenRequestDto !
 { 
 [ 	
 Required	 
@@ -116,7 +116,7 @@
 / 0
 } 
 } ±
-AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDTO.cs
+AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDto.cs
 	namespace 	
 Prueba_Imagen
  
@@ -126,7 +126,7 @@ AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDTO.cs
 public 
 
 class 
-ImagenResponseDTO "
+ImagenResponseDto "
 { 
 public 
 bool 
@@ -147,7 +147,7 @@ AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDTO.cs
 ;( )
 }* +
 public  
-PropiedadesImagenDTO #
+PropiedadesImagenDto #
 ImagenOriginal$ 2
 {3 4
 get5 8
@@ -156,7 +156,7 @@ AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDTO.cs
 ;= >
 }? @
 public  
-PropiedadesImagenDTO #
+PropiedadesImagenDto #
 ImagenModificada$ 4
 {5 6
 get7 :
@@ -168,7 +168,7 @@ AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDTO.cs
 }
 
  Ý
-DJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\PropiedadesImagenDTO.cs
+DJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\PropiedadesImagenDto.cs
 	namespace 	
 Prueba_Imagen
  
@@ -178,7 +178,7 @@ DJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\PropiedadesImagenDTO.cs
 public 
 
 class  
-PropiedadesImagenDTO %
+PropiedadesImagenDto %
 { 
 public 
 string 
@@ -190,7 +190,7 @@ DJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\PropiedadesImagenDTO.cs
 ;, -
 }. /
 public 
-DimensionesDTO 
+DimensionesDto 
 Dimensiones )
 {* +
 get, /

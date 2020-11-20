@@ -1,17 +1,17 @@
 d
->J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\DimensionesDTO.cs
+>J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\DimensionesDto.cs
 
  
 
  
 
  Z
-@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ErrorResponseDTO.cs
+@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ErrorResponseDto.cs
 
  !
 
  f
-@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenRequestDTO.cs
+@J:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenRequestDto.cs
 
  !
 
@@ -20,7 +20,7 @@ d
 
 
  "
-AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDTO.cs
+AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDto.cs
 
  "
 
@@ -31,7 +31,7 @@ AJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\ImagenResponseDTO.cs
 $ 2
 
 $ 4j
-DJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\PropiedadesImagenDTO.cs
+DJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.DTO\PropiedadesImagenDto.cs
 
  %
 

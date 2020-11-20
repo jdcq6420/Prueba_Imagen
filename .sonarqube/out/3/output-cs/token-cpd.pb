@@ -1,243 +1,250 @@
-¦"
+—"
 HJ:\Proyectos\Prueba_Imagen\Prueba_Imagen\Controllers\ImagenController.cs
-	namespace 	
-Prueba_Imagen
+	namespace
+
+ 	
+Prueba_Imagen
+
+
  
-. 
-Controllers #
-{ 
-[ 
-Route 
+.
+
+ 
+Controllers
+
+ #
+{ 
+[ 
+Route 
 
-(
+(
  
-$str 
-) 
-] 
-[ 
-ApiController 
-] 
-public 
+$str 
+) 
+] 
+[ 
+ApiController 
+] 
+public 
 
-class 
-ImagenController !
-:" #
-ControllerBase$ 2
-{ 
+class 
+ImagenController !
+:" #
+ControllerBase$ 2
+{ 
+private 
+readonly 
+IServicioImagen (
+_servicioImagen) 8
+;8 9
 private 
-readonly 
-IServicioImagen (
-_servicioImagen) 8
-;8 9
-private 
-readonly 
-IServicioSeguridad +
-_servicioSeguridad, >
-;> ?
-public 
-ImagenController 
-(  
-IServicioImagen  /
-servicioImagen0 >
-,> ?
-IServicioSeguridad@ R
-servicioSeguridadS d
-)d e
-{ 	
-_servicioImagen 
-= 
-servicioImagen ,
-;, -
-_servicioSeguridad 
-=  
-servicioSeguridad! 2
-;2 3
-} 	
-[ 	
-HttpPost	 
-] 
-public 
-IActionResult 
-Post !
-(! "
-[" #
-FromBody# +
-]+ ,
-ImagenRequestDTO- =
+readonly 
+IServicioSeguridad +
+_servicioSeguridad, >
+;> ?
+public 
+ImagenController 
+(  
+IServicioImagen  /
+servicioImagen0 >
+,> ?
+IServicioSeguridad@ R
+servicioSeguridadS d
+)d e
+{ 	
+_servicioImagen 
+= 
+servicioImagen ,
+;, -
+_servicioSeguridad 
+=  
+servicioSeguridad! 2
+;2 3
+} 	
+[ 	
+HttpPost	 
+] 
+public 
+IActionResult 
+Post !
+(! "
+[" #
+FromBody# +
+]+ ,
+ImagenRequestDto- =
 
-rutaImagen> H
-)H I
-{   	
-try!! 
-{"" 
-if## 
-(## 
-_servicioSeguridad## %
-.##% &
-existeArchivo##& 3
-(##3 4
+rutaImagen> H
+)H I
+{ 	
+try   
+{!! 
+if"" 
+("" 
+_servicioSeguridad"" %
+.""% &
+existeArchivo""& 3
+(""3 4
 
-rutaImagen##4 >
-.##> ?
-Ruta##? C
-)##C D
-)##D E
-{$$ 
-if%% 
-(%% 
-_servicioSeguridad%% )
-.%%) *
-esImagen%%* 2
-(%%2 3
+rutaImagen""4 >
+.""> ?
+Ruta""? C
+)""C D
+)""D E
+{## 
+if$$ 
+($$ 
+_servicioSeguridad$$ )
+.$$) *
+esImagen$$* 2
+($$2 3
 
-rutaImagen%%3 =
-.%%= >
-Ruta%%> B
-)%%B C
-)%%C D
-{&& 
-ImagenResponseDTO'' )
-imagenResponse''* 8
-=''9 :
-new''; >
-ImagenResponseDTO''? P
-(''P Q
-)''Q R
-{(( 
-ImagenOriginal)) *
-=))+ ,
-new))- 0 
-PropiedadesImagenDTO))1 E
-())E F
-)))F G
-,))G H
-Mensaje** #
-=**$ %
-string**& ,
-.**, -
-Empty**- 2
-}++ 
-;++ 
-Image-- 
-imagen-- $
-=--% &
-Image--' ,
-.--, -
-FromFile--- 5
-(--5 6
+rutaImagen$$3 =
+.$$= >
+Ruta$$> B
+)$$B C
+)$$C D
+{%% 
+ImagenResponseDto&& )
+imagenResponse&&* 8
+=&&9 :
+new&&; >
+ImagenResponseDto&&? P
+(&&P Q
+)&&Q R
+{'' 
+ImagenOriginal(( *
+=((+ ,
+new((- 0 
+PropiedadesImagenDto((1 E
+(((E F
+)((F G
+,((G H
+Mensaje)) #
+=))$ %
+string))& ,
+.)), -
+Empty))- 2
+}** 
+;** 
+Image,, 
+imagen,, $
+=,,% &
+Image,,' ,
+.,,, -
+FromFile,,- 5
+(,,5 6
 
-rutaImagen--6 @
-.--@ A
-Ruta--A E
-)--E F
-;--F G
-imagenResponse.. &
-=..' (
-_servicioImagen..) 8
-...8 9
-ProcesarImagen..9 G
-(..G H
-imagen..H N
-)..N O
-;..O P
-imagen// 
-.// 
-Dispose// &
-(//& '
-)//' (
-;//( )
-if11 
-(11 
-imagenResponse11 *
-!=11+ -
-null11. 2
-)112 3
-{22 
-imagenResponse33 *
-.33* +
-Mensaje33+ 2
-=333 4
-Mensajes335 =
-.33= >
-ProcesadaExitosa33> N
-;33N O
-return44 "
-Ok44# %
-(44% &
-imagenResponse44& 4
-)444 5
-;445 6
-}55 
-imagenResponse66 &
-.66& '
-Mensaje66' .
-=66/ 0
-Mensajes661 9
-.669 :
-ProcesadaFallida66: J
-;66J K
-return77 
+rutaImagen,,6 @
+.,,@ A
+Ruta,,A E
+),,E F
+;,,F G
+imagenResponse-- &
+=--' (
+_servicioImagen--) 8
+.--8 9
+ProcesarImagen--9 G
+(--G H
+imagen--H N
+)--N O
+;--O P
+imagen.. 
+... 
+Dispose.. &
+(..& '
+)..' (
+;..( )
+if00 
+(00 
+imagenResponse00 *
+!=00+ -
+null00. 2
+)002 3
+{11 
+imagenResponse22 *
+.22* +
+Mensaje22+ 2
+=223 4
+Mensajes225 =
+.22= >
+ProcesadaExitosa22> N
+;22N O
+return33 "
+Ok33# %
+(33% &
+imagenResponse33& 4
+)334 5
+;335 6
+}44 
+imagenResponse55 &
+.55& '
+Mensaje55' .
+=55/ 0
+Mensajes551 9
+.559 :
+ProcesadaFallida55: J
+;55J K
+return66 
 
-BadRequest77 )
-(77) *
-imagenResponse77* 8
-)778 9
-;779 :
-}88 
-else99 
-{:: 
-return;; 
+BadRequest66 )
+(66) *
+imagenResponse66* 8
+)668 9
+;669 :
+}77 
+else88 
+{99 
+return:: 
 
-BadRequest;; )
-(;;) *
-new;;* -
-ErrorResponseDTO;;. >
-(;;> ?
-);;? @
-{;;A B
-Error;;C H
-=;;I J
-Mensajes;;K S
-.;;S T
-FormatoNoValido;;T c
-};;d e
-);;e f
-;;;f g
-}<< 
-}== 
-else>> 
-{?? 
-return@@ 
+BadRequest:: )
+(::) *
+new::* -
+ErrorResponseDto::. >
+(::> ?
+)::? @
+{::A B
+Error::C H
+=::I J
+Mensajes::K S
+.::S T
+FormatoNoValido::T c
+}::d e
+)::e f
+;::f g
+};; 
+}<< 
+else== 
+{>> 
+return?? 
 
-BadRequest@@ %
-(@@% &
-new@@& )
-ErrorResponseDTO@@* :
-(@@: ;
-)@@; <
-{@@= >
-Error@@? D
-=@@E F
-Mensajes@@G O
-.@@O P
-ArchivoNoExiste@@P _
-}@@` a
-)@@a b
-;@@b c
-}AA 
-}BB 
-catchCC 
-(CC 
-	ExceptionCC 
-eCC 
-)CC 
-{DD 
-throwFF 
-;FF 
-}GG 
-}HH 	
-}II 
-}JJ Ž
+BadRequest?? %
+(??% &
+new??& )
+ErrorResponseDto??* :
+(??: ;
+)??; <
+{??= >
+Error??? D
+=??E F
+Mensajes??G O
+.??O P
+ArchivoNoExiste??P _
+}??` a
+)??a b
+;??b c
+}@@ 
+}AA 
+catchBB 
+(BB 
+	ExceptionBB 
+)BB 
+{CC 
+throwEE 
+;EE 
+}FF 
+}GG 	
+}HH 
+}II Ž
 
 3J:\Proyectos\Prueba_Imagen\Prueba_Imagen\Program.cs
 	namespace 	
