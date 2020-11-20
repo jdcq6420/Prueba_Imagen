@@ -3,7 +3,6 @@ using Prueba_Imagen.Servicio.Interface;
 using Prueba_Imagen.Utilidades.Enum;
 using System;
 using System.Drawing;
-using System.Threading.Tasks;
 
 namespace Prueba_Imagen.Servicio
 {
@@ -22,7 +21,7 @@ namespace Prueba_Imagen.Servicio
             return Orientaciones.Vertical.ToString();
         }
 
-        public PropiedadesImagenDTO CambiarTamaño(Size dimensiones, string orientacion)
+        public PropiedadesImagenDto CambiarTamaño(Size dimensiones, string orientacion)
         {
             double radio; double radioX = 0; double radioY = 0;
 
@@ -40,9 +39,9 @@ namespace Prueba_Imagen.Servicio
             }
 
             radio = radioX < radioY ? radioX : radioY;
-            PropiedadesImagenDTO propiedades = new PropiedadesImagenDTO()
+            PropiedadesImagenDto propiedades = new PropiedadesImagenDto()
             {
-                Dimensiones = new DimensionesDTO()
+                Dimensiones = new DimensionesDto()
                 {
                     Ancho = Convert.ToInt32(Math.Floor(radio * dimensiones.Width)),
                     Alto = Convert.ToInt32(Math.Floor(radio * dimensiones.Height))
@@ -53,14 +52,14 @@ namespace Prueba_Imagen.Servicio
 
         }
 
-        public ImagenResponseDTO ProcesarImagen(Image imagen)
+        public ImagenResponseDto ProcesarImagen(Image imagen)
         {
-            ImagenResponseDTO respuesta = new ImagenResponseDTO()
+            ImagenResponseDto respuesta = new ImagenResponseDto()
             {
                 RequiereModificar = false,
-                ImagenOriginal = new PropiedadesImagenDTO()
+                ImagenOriginal = new PropiedadesImagenDto()
                 {
-                    Dimensiones = new DimensionesDTO()
+                    Dimensiones = new DimensionesDto()
                     {
                         Ancho = imagen.Width,
                         Alto = imagen.Height

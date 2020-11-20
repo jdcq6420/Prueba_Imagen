@@ -4,7 +4,6 @@ using Prueba_Imagen.Servicio.Interface;
 using Prueba_Imagen.Utilidades.Recursos;
 using System;
 using System.Drawing;
-using System.Threading.Tasks;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,7 +27,7 @@ namespace Prueba_Imagen.Controllers
         /// </summary>
         /// <param name="rutaImagen"></param>
         [HttpPost]
-        public IActionResult Post([FromBody] ImagenRequestDTO rutaImagen)
+        public IActionResult Post([FromBody] ImagenRequestDto rutaImagen)
         {
             try
             {   
@@ -36,9 +35,9 @@ namespace Prueba_Imagen.Controllers
                 {
                     if(_servicioSeguridad.esImagen(rutaImagen.Ruta))
                     {
-                        ImagenResponseDTO imagenResponse = new ImagenResponseDTO()
+                        ImagenResponseDto imagenResponse = new ImagenResponseDto()
                         {
-                            ImagenOriginal = new PropiedadesImagenDTO(),
+                            ImagenOriginal = new PropiedadesImagenDto(),
                             Mensaje = string.Empty
                         };
 
@@ -56,15 +55,15 @@ namespace Prueba_Imagen.Controllers
                     }
                     else
                     {
-                        return BadRequest(new ErrorResponseDTO() { Error = Mensajes.FormatoNoValido });
+                        return BadRequest(new ErrorResponseDto() { Error = Mensajes.FormatoNoValido });
                     }
                 }
                 else
                 {
-                    return BadRequest(new ErrorResponseDTO() { Error = Mensajes.ArchivoNoExiste });
+                    return BadRequest(new ErrorResponseDto() { Error = Mensajes.ArchivoNoExiste });
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
                 throw;

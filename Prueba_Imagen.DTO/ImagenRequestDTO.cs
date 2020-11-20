@@ -2,7 +2,7 @@
 
 namespace Prueba_Imagen.DTO
 {
-    public class ImagenRequestDTO
+    public class ImagenRequestDto
     {
         [Required(AllowEmptyStrings = false, ErrorMessage = "Debe ingresar una ruta con su respectivo archivo.")]
         public string Ruta { get; set; }

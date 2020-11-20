@@ -1,10 +1,10 @@
 ﻿namespace Prueba_Imagen.DTO
 {
-    public class ImagenResponseDTO
+    public class ImagenResponseDto
     {
         public bool RequiereModificar { get; set; }
         public string Mensaje { get; set; }
-        public PropiedadesImagenDTO ImagenOriginal { get; set; }
-        public PropiedadesImagenDTO ImagenModificada { get; set; }
+        public PropiedadesImagenDto ImagenOriginal { get; set; }
+        public PropiedadesImagenDto ImagenModificada { get; set; }
     }
 }

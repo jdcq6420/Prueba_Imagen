@@ -1,54 +1,5 @@
-·
+±
 NJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\Interface\IServicioImagen.cs
-	namespace 	
-Prueba_Imagen
- 
-. 
-Servicio  
-.  !
-	Interface! *
-{		 
-public
-
- 
-
-	interface
-
- 
-IServicioImagen
-
- $
-{ 
-string 
-Orientacion 
-( 
-Size 
-dimensiones  +
-)+ ,
-;, - 
-PropiedadesImagenDTO 
-CambiarTama√±o *
-(* +
-Size+ /
-dimensiones0 ;
-,; <
-string= C
-orientacionD O
-)O P
-;P Q
-Task 
-< 
-ImagenResponseDTO 
-> 
-ProcesarImagen  .
-(. /
-Image/ 4
-imagen5 ;
-); <
-;< =
-} 
-} Ã
-QJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\Interface\IServicioSeguridad.cs
 	namespace 	
 Prueba_Imagen
  
@@ -59,39 +10,85 @@ QJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\Interface\IServicioSeguridad.
 { 
 public 
 
-	interface 
-IServicioSeguridad '
-{ 
-bool		 
-existeArchivo		 
-(		 
-string		 !
-ruta		" &
-)		& '
-;		' (
-bool
+	interface 
+IServicioImagen $
+{ 
+string		 
+Orientacion		 
+(		 
+Size		 
+dimensiones		  +
+)		+ ,
+;		, - 
+PropiedadesImagenDTO
 
- 
-esImagen
+ 
+CambiarTama√±o
 
- 
+ *
 (
 
- 
+* +
+Size
+
++ /
+dimensiones
+
+0 ;
+,
+
+; <
 string
 
- 
-ruta
+= C
+orientacion
 
- !
+D O
 )
 
-! "
+O P
 ;
 
-" #
-} 
-} ”<
+P Q
+ImagenResponseDTO 
+ProcesarImagen (
+(( )
+Image) .
+imagen/ 5
+)5 6
+;6 7
+} 
+} Ã
+QJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\Interface\IServicioSeguridad.cs
+	namespace 	
+Prueba_Imagen
+ 
+. 
+Servicio  
+.  !
+	Interface! *
+{ 
+public 
+
+	interface 
+IServicioSeguridad '
+{ 
+bool 
+existeArchivo 
+( 
+string !
+ruta" &
+)& '
+;' (
+bool 
+esImagen 
+( 
+string 
+ruta !
+)! "
+;" #
+} 
+} ê<
 CJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioImagen.cs
 	namespace 	
 Prueba_Imagen
@@ -341,17 +338,13 @@ Horizontal% /
 propiedades44 
 ;44 
 }66 	
-public88 
-async88 
-Task88 
-<88 
-ImagenResponseDTO88 +
->88+ ,
-ProcesarImagen88- ;
-(88; <
-Image88< A
-imagen88B H
-)88H I
+public88 
+ImagenResponseDTO88  
+ProcesarImagen88! /
+(88/ 0
+Image880 5
+imagen886 <
+)88< =
 {99 	
 ImagenResponseDTO:: 
 	respuesta:: '
@@ -525,101 +518,137 @@ Horizontal% /
 }__ 
 }`` ®
 FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
-	namespace		 	
-Prueba_Imagen		
+	namespace 	
+Prueba_Imagen
  
-.		 
-Servicio		  
-{
-
- 
-public 
+. 
+Servicio  
+{ 
+public		 
 
-class 
-ServicioSeguridad "
-:# $
-IServicioSeguridad% 7
-{ 
-public 
-bool 
-existeArchivo !
-(! "
-string" (
-ruta) -
-)- .
-{ 	
-return 
-File 
-. 
-Exists 
-( 
-ruta #
-)# $
-;$ %
-} 	
-public 
-bool 
-esImagen 
-( 
-string #
-ruta$ (
-)( )
-{ 	
-byte 
-[ 
-] 
-bytes 
-= 
-File 
-.  
-ReadAllBytes  ,
-(, -
-ruta- 1
-)1 2
-;2 3
-try 
-{ 
-if 
-( 
+class		 
+ServicioSeguridad		 "
+:		# $
+IServicioSeguridad		% 7
+{
+
+ 
+public 
+bool 
+existeArchivo !
+(! "
+string" (
+ruta) -
+)- .
+{ 	
+return 
+File 
+. 
+Exists 
+( 
+ruta #
+)# $
+;$ %
+} 	
+public 
+bool 
+esImagen 
+( 
+string #
+ruta$ (
+)( )
+{ 	
+byte 
+[ 
+] 
+bytes 
+= 
+File 
+.  
+ReadAllBytes  ,
+(, -
+ruta- 1
+)1 2
+;2 3
+try 
+{ 
+if 
+( 
+EncabezadosImagen %
+.% &
+bmp& )
+.) *
+SequenceEqual* 7
+(7 8
+bytes8 =
+.= >
+Take> B
+(B C
+EncabezadosImagenC T
+.T U
+bmpU X
+.X Y
+LengthY _
+)_ `
+)` a
+||b d
+EncabezadosImagen %
+.% &
+png& )
+.) *
+SequenceEqual* 7
+(7 8
+bytes8 =
+.= >
+Take> B
+(B C
+EncabezadosImagenC T
+.T U
+pngU X
+.X Y
+LengthY _
+)_ `
+)` a
+||b d
 EncabezadosImagen %
-.% &
-bmp& )
-.) *
-SequenceEqual* 7
-(7 8
-bytes8 =
-.= >
-Take> B
-(B C
-EncabezadosImagenC T
-.T U
-bmpU X
-.X Y
-LengthY _
-)_ `
-)` a
-||b d
+.% &
+tiff& *
+.* +
+SequenceEqual+ 8
+(8 9
+bytes9 >
+.> ?
+Take? C
+(C D
+EncabezadosImagenD U
+.U V
+tiffV Z
+.Z [
+Length[ a
+)a b
+)b c
+||d f
 EncabezadosImagen %
-.% &
-png& )
-.) *
-SequenceEqual* 7
-(7 8
-bytes8 =
-.= >
-Take> B
-(B C
-EncabezadosImagenC T
-.T U
-pngU X
-.X Y
-LengthY _
-)_ `
-)` a
-||b d
+.% &
+tiff2& +
+.+ ,
+SequenceEqual, 9
+(9 :
+bytes: ?
+.? @
+Take@ D
+(D E
+EncabezadosImagenE V
+.V W
+tiff2W \
+.\ ]
+Length] c
+)c d
+)d e
+||f h
 EncabezadosImagen %
 .% &
-tiff& *
+jpeg& *
 .* +
 SequenceEqual+ 8
 (8 9
@@ -629,7 +658,7 @@ FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 (C D
 EncabezadosImagenD U
 .U V
-tiffV Z
+jpegV Z
 .Z [
 Length[ a
 )a b
@@ -637,7 +666,7 @@ FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 ||d f
 EncabezadosImagen %
 .% &
-tiff2& +
+jpeg2& +
 .+ ,
 SequenceEqual, 9
 (9 :
@@ -647,82 +676,46 @@ FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 (D E
 EncabezadosImagenE V
 .V W
-tiff2W \
+jpeg2W \
 .\ ]
 Length] c
 )c d
-)d e
-||f h
-EncabezadosImagen %
-.% &
-jpeg& *
-.* +
-SequenceEqual+ 8
-(8 9
-bytes9 >
-.> ?
-Take? C
-(C D
-EncabezadosImagenD U
-.U V
-jpegV Z
-.Z [
-Length[ a
-)a b
-)b c
-||d f
-EncabezadosImagen %
-.% &
-jpeg2& +
-.+ ,
-SequenceEqual, 9
-(9 :
-bytes: ?
-.? @
-Take@ D
-(D E
-EncabezadosImagenE V
-.V W
-jpeg2W \
-.\ ]
-Length] c
-)c d
-)d e
-)e f
-{ 
-return 
-true 
-;  
-} 
-return   
-false   
-;   
-}!! 
-catch"" 
-("" 
-	Exception"" 
-e"" 
-)"" 
-{## 
-throw$$ 
-;$$ 
-}%% 
-finally&& 
-{'' 
-Array(( 
-.(( 
-Clear(( 
-((( 
-bytes(( !
-,((! "
-$num((" #
-,((# $
-bytes(($ )
-.(() *
-Length((* 0
-)((0 1
-;((1 2
-})) 
-}** 	
-}++ 
-},, 
+)d e
+)e f
+{ 
+return 
+true 
+;  
+} 
+return 
+false 
+; 
+} 
+catch   
+(   
+	Exception   
+e   
+)   
+{!! 
+throw"" 
+;"" 
+}## 
+finally$$ 
+{%% 
+Array&& 
+.&& 
+Clear&& 
+(&& 
+bytes&& !
+,&&! "
+$num&&" #
+,&&# $
+bytes&&$ )
+.&&) *
+Length&&* 0
+)&&0 1
+;&&1 2
+}'' 
+}(( 	
+})) 
+}** 

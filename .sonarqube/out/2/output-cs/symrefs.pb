@@ -1,38 +1,38 @@
 ∞
 NJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\Interface\IServicioImagen.cs
 
+ $
+
+		 
+
+		  +
+
 
 
- $
+ *
 
- 
+
+
+0 ;
 
-  +
+
+
+D O
 
- *
+ (
 
-0 ;
-
-D O
-
-  .
-
-5 ;è
+/ 5è
 QJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\Interface\IServicioSeguridad.cs
 
- '
+ '
 
-		 
+ 
 
-		" &
+" &
 
-
-
- 
+ 
 
-
-
- !π
+ !π
 CJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioImagen.cs
 
 
@@ -48,19 +48,19 @@ CJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioImagen.cs
 4 :!! && ** #**/ 5
 ++! ,44 
 
-88- ;d
-88B HAA  &BB %FF- 3LL MM PPC IUU VV YYC IF
+88! /d
+886 <AA  &BB %FF- 3LL MM PPC IUU VV YYC IF
 :: 'GG OO !PP !XX !YY !]] 2
 FF GG3 >II PPP [YYP [Ä
 FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 
- "
+		 "
 
- !
-) - #
+ !
+) - #
 
- 
-$ (- 1Z
- 8 =8 =9 >: ?9 >: ?(( !(($ )
+ 
+$ (- 1Z
+ 8 =8 =9 >: ?9 >: ?&& !&&$ )
 
-"" 
+   
