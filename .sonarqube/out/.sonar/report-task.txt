@@ -2,5 +2,5 @@ projectKey=PruebaImagen
 serverUrl=http://localhost:9000
 serverVersion=8.5.1.38104
 dashboardUrl=http://localhost:9000/dashboard?id=PruebaImagen
-ceTaskId=AXXjyxIBJ-FOXN86KOAS
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AXXjyxIBJ-FOXN86KOAS
+ceTaskId=AXXj2XdsJ-FOXN86KOAT
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AXXj2XdsJ-FOXN86KOAT

@@ -1,5 +1,6 @@
 ﻿using Prueba_Imagen.Servicio.Interface;
 using Prueba_Imagen.Utilidades.Constantes;
+using Prueba_Imagen.Utilidades.Enum;
 using System;
 using System.IO;
 using System.Linq;
@@ -13,16 +14,22 @@ namespace Prueba_Imagen.Servicio
             return File.Exists(ruta);
         }
 
-        public bool esImagen(string ruta)
+        public bool esImagen(string imagen, int origen)
         {
-            byte[] bytes = File.ReadAllBytes(ruta);
+            byte[] bytes = new byte[] { };
+            switch (origen)
+            {
+                case (int)Origen.ruta:
+                    bytes = File.ReadAllBytes(imagen);
+                    break;
+
+                case (int)Origen.base64:
+                    bytes = DeseralizarImagen(imagen);
+                    break;
+            }
             try
             {
-                if (EncabezadosImagen.bmp.SequenceEqual(bytes.Take(EncabezadosImagen.bmp.Length)) ||
-                    EncabezadosImagen.png.SequenceEqual(bytes.Take(EncabezadosImagen.png.Length)) ||
-                    EncabezadosImagen.tiff.SequenceEqual(bytes.Take(EncabezadosImagen.tiff.Length)) ||
-                    EncabezadosImagen.tiff2.SequenceEqual(bytes.Take(EncabezadosImagen.tiff2.Length)) ||
-                    EncabezadosImagen.jpeg.SequenceEqual(bytes.Take(EncabezadosImagen.jpeg.Length)) ||
+                if (EncabezadosImagen.jpeg.SequenceEqual(bytes.Take(EncabezadosImagen.jpeg.Length)) ||
                     EncabezadosImagen.jpeg2.SequenceEqual(bytes.Take(EncabezadosImagen.jpeg2.Length)))
                 {
                     return true;
@@ -35,8 +42,19 @@ namespace Prueba_Imagen.Servicio
             }
             finally
             {
-                Array.Clear(bytes,0,bytes.Length);
+                Array.Clear(bytes, 0, bytes.Length);
             }
+        }
+
+        private byte[] DeseralizarImagen(string imagen)
+        {
+            byte[] respuesta = Convert.FromBase64String(imagen);
+            //MemoryStream memoryStream = new MemoryStream(File.ReadAllBytes(imagen));
+            //respuesta = memoryStream.ToArray();
+            //memoryStream.Close();
+            //memoryStream.Dispose();
+
+            return respuesta;
         }
     }
 }

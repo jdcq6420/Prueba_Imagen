@@ -8,5 +8,6 @@ namespace Prueba_Imagen.Servicio.Interface
         string Orientacion(Size dimensiones);
         PropiedadesImagenDto CambiarTamaño(Size dimensiones, string orientacion);
         ImagenResponseDto ProcesarImagen(Image imagen);
+        public Image DecodificaImagen(string imagenBase64);
     }
 }

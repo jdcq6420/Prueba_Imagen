@@ -21,4 +21,9 @@
     {
         bmp, jpeg, gif, tiff, png
     }
+
+    public enum Origen
+    {
+        ruta, base64
+    }
 }

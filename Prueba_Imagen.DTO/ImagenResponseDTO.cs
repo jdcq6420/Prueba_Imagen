@@ -6,5 +6,6 @@
         public string Mensaje { get; set; }
         public PropiedadesImagenDto ImagenOriginal { get; set; }
         public PropiedadesImagenDto ImagenModificada { get; set; }
+        public ErrorResponseDto Error { get; set; }
     }
 }

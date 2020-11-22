@@ -3,6 +3,7 @@ using Prueba_Imagen.Servicio.Interface;
 using Prueba_Imagen.Utilidades.Enum;
 using System;
 using System.Drawing;
+using System.IO;
 
 namespace Prueba_Imagen.Servicio
 {
@@ -90,6 +91,16 @@ namespace Prueba_Imagen.Servicio
                     break;
             }
             return respuesta;
+        }
+
+        public Image DecodificaImagen(string imagenBase64)
+        {
+            byte[] imagen = Convert.FromBase64String(imagenBase64);
+            using (var ms = new MemoryStream(imagen, 0, imagen.Length))
+            {
+                Image image = Image.FromStream(ms, true);
+                return image;
+            }
         }
     }
 }
