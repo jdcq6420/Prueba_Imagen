@@ -23,6 +23,7 @@ namespace Prueba_Imagen
             services.AddControllers();
             services.AddTransient<IServicioImagen,ServicioImagen>();
             services.AddTransient<IServicioSeguridad, ServicioSeguridad>();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,6 +39,8 @@ namespace Prueba_Imagen
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseSwagger();
 
             app.UseEndpoints(endpoints =>
             {
