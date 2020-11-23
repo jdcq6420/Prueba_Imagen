@@ -6,6 +6,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="deployment.yml" />
+    <None Remove="Dockerfile" />
+    <None Remove="service.yml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Prueba_Imagen.DTO\Prueba_Imagen.DTO.csproj" />
     <ProjectReference Include="..\Prueba_Imagen.Servicio\Prueba_Imagen.Servicio.csproj" />
   </ItemGroup>
