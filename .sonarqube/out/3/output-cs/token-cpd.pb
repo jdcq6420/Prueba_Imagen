@@ -393,7 +393,7 @@ BadRequest__ %
 }ff 
 }gg 	
 }hh 
-}ii Ž
+}ii ¢
 
 3J:\Proyectos\Prueba_Imagen\Prueba_Imagen\Program.cs
 	namespace 	
@@ -401,9 +401,10 @@ BadRequest__ %
  
 { 
 public 
-
-class 
-Program 
+
+static 
+class 
+Program 
 { 
 public 
 static 

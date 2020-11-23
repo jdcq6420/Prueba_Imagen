@@ -36,9 +36,9 @@ namespace Prueba_Imagen.Servicio
                 }
                 return false;
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                throw;
+                throw e;
             }
             finally
             {

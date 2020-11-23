@@ -95,10 +95,10 @@ namespace Prueba_Imagen.Controllers
                     return BadRequest(imagenResponse);
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
-
-                throw;
+                var msg = $"Se ha presentado un error en el procesamiento de la imagen: {e.Message}";
+                return BadRequest(msg);
             }
         }
     }
