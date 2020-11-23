@@ -1,4 +1,4 @@
-Å8
+–;
 HJ:\Proyectos\Prueba_Imagen\Prueba_Imagen\Controllers\ImagenController.cs
 	namespace		 	
 Prueba_Imagen		
@@ -386,10 +386,28 @@ BadRequest__ %
 catchbb 
 (bb 
 	Exceptionbb 
-)bb 
-{cc 
-throwee 
-;ee 
+ebb 
+)bb 
+{cc 
+vardd 
+msgdd 
+=dd 
+$"dd H
+<Se ha presentado un error en el procesamiento de la imagen: dd X
+{ddX Y
+eddY Z
+.ddZ [
+Messagedd[ b
+}ddb c
+"ddc d
+;ddd e
+returnee 
+
+BadRequestee !
+(ee! "
+msgee" %
+)ee% &
+;ee& '
 }ff 
 }gg 	
 }hh 

@@ -61,7 +61,7 @@ CJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioImagen.cs
 ``- 9bb5 A
 bb cc- 3cc8 >
 cc ee/ 1
-ee ff Â
+ee ff Ø
 FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 
 
@@ -76,5 +76,6 @@ FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 0 6 F
      9 >!!: ?-- !--& +
 11 ( -
+'' )) 
 110 6338 >
 33 44 
