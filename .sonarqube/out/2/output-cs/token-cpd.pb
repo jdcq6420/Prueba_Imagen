@@ -577,7 +577,7 @@ FromStreamee$ .
 }gg 
 }hh 	
 }ii 
-}jj Ï
+}jj À
 FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 	namespace 	
 Prueba_Imagen
@@ -736,8 +736,7 @@ FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 catch'' 
 ('' 
 	Exception'' 
-e'' 
-)'' 
+)'' 
 {(( 
 throw)) 
 ;)) 
