@@ -55,14 +55,12 @@ namespace Prueba_Imagen.Controllers
                 {
                     imagenResponse.Error.Error = Mensajes.FormatoNoValido;
                     return BadRequest(imagenResponse);
-                    //return BadRequest(new ErrorResponseDto() { Error = Mensajes.FormatoNoValido });
                 }
             }
             else
             {
                 imagenResponse.Error.Error = Mensajes.ArchivoNoExiste;
                 return BadRequest(imagenResponse);
-                //return BadRequest(new ErrorResponseDto() { Error = Mensajes.ArchivoNoExiste });
             }
         }
 

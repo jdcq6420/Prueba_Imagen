@@ -49,11 +49,6 @@ namespace Prueba_Imagen.Servicio
         private byte[] DeseralizarImagen(string imagen)
         {
             byte[] respuesta = Convert.FromBase64String(imagen);
-            //MemoryStream memoryStream = new MemoryStream(File.ReadAllBytes(imagen));
-            //respuesta = memoryStream.ToArray();
-            //memoryStream.Close();
-            //memoryStream.Dispose();
-
             return respuesta;
         }
     }

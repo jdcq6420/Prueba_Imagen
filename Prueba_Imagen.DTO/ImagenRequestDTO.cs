@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace Prueba_Imagen.DTO
+﻿namespace Prueba_Imagen.DTO
 {
     public class ImagenRequestDto
     {
