@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba_Imagen", "Prueba_Imagen\Prueba_Imagen.csproj", "{78A56435-2DD4-4A07-950E-C4091D04017C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba_Imagen", "Prueba_Imagen\Prueba_Imagen.csproj", "{78A56435-2DD4-4A07-950E-C4091D04017C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba_Imagen.DTO", "Prueba_Imagen.DTO\Prueba_Imagen.DTO.csproj", "{24D7C580-B67B-4450-93DE-31CF03F08F13}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba_Imagen.DTO", "Prueba_Imagen.DTO\Prueba_Imagen.DTO.csproj", "{24D7C580-B67B-4450-93DE-31CF03F08F13}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba_Imagen.Servicio", "Prueba_Imagen.Servicio\Prueba_Imagen.Servicio.csproj", "{BFAC8CAA-54DE-4DBE-A422-34F531B4C4CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba_Imagen.Servicio", "Prueba_Imagen.Servicio\Prueba_Imagen.Servicio.csproj", "{BFAC8CAA-54DE-4DBE-A422-34F531B4C4CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prueba_Imagen.Utilidades", "Prueba_Imagen.Utilidades\Prueba_Imagen.Utilidades.csproj", "{92B284EE-A3F5-4C5B-8FF9-D9C55E227108}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prueba_Imagen.Utilidades", "Prueba_Imagen.Utilidades\Prueba_Imagen.Utilidades.csproj", "{92B284EE-A3F5-4C5B-8FF9-D9C55E227108}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

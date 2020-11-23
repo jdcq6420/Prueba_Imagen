@@ -32,7 +32,8 @@ namespace Prueba_Imagen.Controllers
             ImagenResponseDto imagenResponse = new ImagenResponseDto()
             {
                 ImagenOriginal = new PropiedadesImagenDto(),
-                Mensaje = string.Empty
+                Mensaje = string.Empty,
+                Error = new ErrorResponseDto() { Error = string.Empty}
             };
             if (_servicioSeguridad.existeArchivo(rutaImagen.Ruta))
             {

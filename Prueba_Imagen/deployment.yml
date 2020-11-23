@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pruebaimagen-deployment
+spec:
+  selector:
+    matchLabels:
+      app: pruebaimagen-pod
+  template:
+    metadata:
+      labels:
+        app: pruebaimagen-pod
+    spec:
+      containers:
+      - name: pruebaimagen-container
+        image: regimagenes.azurecr.io/pruebaimagen:v1
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
+        imagePullPolicy: Always

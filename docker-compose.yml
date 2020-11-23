@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  prueba_imagen:
+    image: ${DOCKER_REGISTRY-}pruebaimagen
+    build:
+      context: .
+      dockerfile: Prueba_Imagen/Dockerfile
