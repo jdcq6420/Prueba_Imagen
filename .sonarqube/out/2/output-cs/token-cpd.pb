@@ -577,7 +577,7 @@ FromStreamee$ .
 }gg 
 }hh 	
 }ii 
-}jj Þ
+}jj Ï
 FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 	namespace 	
 Prueba_Imagen
@@ -740,8 +740,7 @@ FJ:\Proyectos\Prueba_Imagen\Prueba_Imagen.Servicio\ServicioSeguridad.cs
 )'' 
 {(( 
 throw)) 
-e)) 
-;)) 
+;)) 
 }** 
 finally++ 
 {,, 
